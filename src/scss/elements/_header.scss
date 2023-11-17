@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(50, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  padding-inline-end: 7.5vw;
   &__left {
     height: 100vh;
     grid-area: 1 / 1 / 51 / 3;
@@ -18,8 +19,9 @@
   }
   &__nav {
     padding-block-start: 4vh;
-    padding-inline-end: calc(7.5vw - 20px);
-    text-align: end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
   }
   &__upperMenu {
     padding-block-end: 1rem;
@@ -56,7 +58,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-inline-end: 7.5vw;
     
     &-title {
         text-align: center;

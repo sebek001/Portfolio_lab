@@ -1,0 +1,53 @@
+.simpleSteps {
+  padding-block-start: 6vh;
+  padding-block-end: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  &__title {
+    font-size: 38px;
+    line-height: 55px;
+    letter-spacing: -0.76px;
+  }
+  &__elements {
+    margin-block: 4vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 9vw;
+    background-color: $background-grey;
+    width: 100vw;
+    &-step {
+      padding-block-start: 7.5vh;
+      padding-block-end: 6.5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      &-title {
+        padding-block-start: 1vh;
+        font-size: 18px;
+        line-height: 24px;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 4vw;
+          height: 1px; /* Wysokość linii */
+          background-color: #707070;
+          margin-block-start: 1vh;
+        }
+      }
+      &-desc{
+            padding-block-start: 2vh;
+        }
+    }
+  }
+}
