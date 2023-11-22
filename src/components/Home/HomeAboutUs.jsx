@@ -1,3 +1,5 @@
+import signature from '../../../src/assets/Signature.svg';
+
 export default function HomeAboutUs() {
   return (
     <section className="aboutUs" id="o_nas">
@@ -12,10 +14,14 @@ export default function HomeAboutUs() {
         <img
           className="aboutUs__left-signature"
           alt="signature"
-          src="../../../src/assets/Signature.svg"
+          src={signature}
         />
       </div>
       <div className="aboutUs__right" />
     </section>
   );
 }
+
+
+
+
