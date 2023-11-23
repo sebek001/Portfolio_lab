@@ -1,0 +1,80 @@
+.whoWeHelp {
+    padding-block-start: 70px;
+    padding-block-end: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        font-size: 38px;
+        letter-spacing: -0.76px;
+        line-height: 55px;
+    }
+    &__selection {
+        padding-block-start: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+        &-item{
+            cursor: pointer;
+            font-size: 24px;
+            line-height: 85px;
+            width: 350px;
+            text-align: center;
+            &.selected {
+                border: 0.75px solid $font-color;
+            }
+        }
+    }
+    &__data{
+        padding-block: 7vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-description {
+            width: 50vw;
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+            padding-block-end: 7vh;
+        }
+        &-organizations {
+           width: 80vw;
+           display: flex;
+           justify-content: space-between;
+           padding-block: 30px;
+           border-bottom: 1px solid #707070;
+           &:last-of-type {
+            border-bottom: none;
+           }
+           &-name{
+            font-family: $font-alt;
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 31px;
+           }
+           &-goals{
+            font-family: $font-alt;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+           }
+           &-needs{
+            font-family: $font-alt;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+           }
+        }
+    }
+}
+
+.pagination__button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #707070;
+    padding: 13px 15px;
+    margin: 10px;
+}
