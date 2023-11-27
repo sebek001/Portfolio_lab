@@ -1,0 +1,58 @@
+.log {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block-start: 13vh;
+  &__title {
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.8px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block-start: 6vh;
+    &-inputs {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 67px;
+      background-color: $background-grey;
+    }
+    &-label {
+      font-weight: 600;
+      &:last-of-type, &:nth-of-type(2){
+        padding-block-start: 30px;
+      }
+    }
+    &-input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #707070;
+        width: 13vw;
+        height: 4vh;
+    }
+    &-buttons {
+        padding-block-start: 40px;
+        display: flex;
+        gap: 14.5vw;
+        &-btn{
+            font-family: $font-base;
+            font-size: 18px;
+            font-weight: 300;
+            border: 0.75px solid transparent;
+            text-decoration: none;
+            color: $font-color;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 15px;
+            &:hover {
+                border: 0.75px solid $font-color;
+            }
+        }
+    }
+
+  }
+}
