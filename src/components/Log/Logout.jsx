@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import HomeNav from "../Home/HomeNav";
+import HomeNavLog from "../Home/HomeNavLog";
 
 export default function Register() {
   return (
     <>
       <header>
-        <HomeNav />
+        <HomeNavLog />
       </header>
       <section className="log">
         <h1 style={{textAlign: 'center'}} className="log__title">Wylogowanie nastąpiło <br/> pomyślnie!</h1>

@@ -33,6 +33,11 @@
         border-bottom: 1px solid #707070;
         width: 13vw;
         height: 4vh;
+        &-nonValid {
+          font-size: 12px;
+          font-weight: 600;
+          color: red;
+        }
     }
     &-buttons {
         padding-block-start: 40px;

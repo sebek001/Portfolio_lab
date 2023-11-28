@@ -13,6 +13,7 @@ export default function HomeContact() {
     } else {
       document.getElementById("form_name").style.borderBottom = "";
     }
+    
 
     // Sprawdzanie walidacji emaila
     if (mailValidation === "nie") {
